@@ -42,7 +42,7 @@ The goal of this repository is to illustrate the effectiveness of solving bileve
 
 This paper solves the bilevel programs by direct and relaxation methods of four reformulations, namely, MDP, eMDP, MPCC, and WDP.
 
-The folder [code](code) contains four types of files: generation of linear bilevel programs( [problem](code/problem.m) ), objective functions ( [fun](code/fun.m) ), constraints, and main programs. An example is as follows:
+The folder [code](code) contains four types of files: generation of linear bilevel programs( [problem](code/problem.m) ), objective functions( [fun](code/fun.m) ), constraints, and main programs. An example is as follows:
 
 - [main_MDP](code/main_MDP.m) is the main program that solves the bilevel programs by the MDP direct method.
 
