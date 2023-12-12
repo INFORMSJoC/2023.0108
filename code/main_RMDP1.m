@@ -73,7 +73,3 @@ end
 date = datestr(now);
 date = strrep(date,':','-');
 save(['RMDP1, ',date],'result');
-
-
-
-
