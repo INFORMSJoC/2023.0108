@@ -67,13 +67,13 @@ Tables 1 & 2 shows the analytical results of the detailed numerical results [Tab
 
 - [Table 2](results/Table_2_Comparison_of_MDP_and_eMDP_with_MPCC_and_WDP.pdf) shows the comparison results of four methods.
   
-[Tables 3 - 17](results/Table_3-17_Detailed_numerical_results.pdf) show detailed numerical results, but are not included in the paper due to their length. 
+[Tables 3-17](results/Table_3-17_Detailed_numerical_results.pdf) show detailed numerical results, but are not included in the paper due to their length. 
 
-- Tables 3- 5 show the numerical results for the three relaxation schemes for the MDP. 
-- Tables 6 - 8 show the numerical results for relaxation and direct MPCC. 
-- Tables 9 - 11 show the numerical results for relaxation and direct WDP. 
-- Tables 12 - 14 show the numerical results for relaxation and direct MDP, where is the first relaxation of MDP, i.e.,RMDP1. 
-- Tables 15 - 17 show the numerical results for relaxation and direct eMDP.
+- Tables 3-5 show the numerical results for the three relaxation schemes for the MDP. 
+- Tables 6-8 show the numerical results for relaxation and direct MPCC. 
+- Tables 9-11 show the numerical results for relaxation and direct WDP. 
+- Tables 12-14 show the numerical results for relaxation and direct MDP, where is the first relaxation of MDP, i.e.,RMDP1. 
+- Tables 15-17 show the numerical results for relaxation and direct eMDP.
 
 
 ## Requirements
