@@ -41,15 +41,15 @@ The goal of this software is to compare the effectiveness of methods for solving
 ### Code
 This paper solves the bilevel programs based on four methods, namely, MDP, eMDP, MPCC, and WDP, and use both direct and relaxation methods, respectively.
 
-The folder code contains four types of files: generation of linear bilevel programs([problem](code/problem)), objective functions ([fun](code/fun)), constraints, and main programs. An example is as follows:
+The folder code contains four types of files: generation of linear bilevel programs( [problem](code/problem) ), objective functions ( [fun](code/fun) ), constraints, and main programs. An example is as follows:
 
--[main_MDP](code/main_MDP) is the main program that solves the bilevel programs by the MDP direct method.
+- [main_MDP](code/main_MDP) is the main program that solves the bilevel programs by the MDP direct method.
 
--[constraints_MDP](code/constraints_MDP) is the constraint program for solving bilevel programs by the MDP direct method.
+- [constraints_MDP](code/constraints_MDP) is the constraint program for solving bilevel programs by the MDP direct method.
 
--[main_RMDP](code/main_RMDP) is the main program that solves the bilevel programs by the MDP relaxation method.
+- [main_RMDP](code/main_RMDP) is the main program that solves the bilevel programs by the MDP relaxation method.
 
--[constraints_RMDP](code/constraints_RMDP) is the constraint program for solving bilevel programs by the MDP relaxation method.
+- [constraints_RMDP](code/constraints_RMDP) is the constraint program for solving bilevel programs by the MDP relaxation method.
 
 
 ### Data
@@ -60,19 +60,19 @@ All the necessary [data](data) for replicating the experiments is included withi
 
 The [results](results) consist of two parts: one is the detailed numerical results of solving the bilevel programs using the four methods, and the other is the results of analyzing them.
 
--[Tables 1-2](results/) shows the analytical results of the detailed numerical results [Tables 3-17], which are in the numerical experiments section of the paper. 
-  [Table 1] shows the comparison results of three relaxation schemes for MDP. 
-  [Table 2] shows the comparison results of four methods.
+Tables 1 & 2 shows the analytical results of the detailed numerical results [Tables 3-17](results/Table_3-17_Detailed_numerical_results.pdf) which are in the numerical experiments section of the paper. 
+
+- [Table 1](results/Table_1_Comparison_of_three_relaxation_schemes_MDP1,_MDP2,_and_MDP3.pdf) shows the comparison results of three relaxation schemes for MDP. 
+
+- [Table 2](results/Table_2_Comparison_of_MDP_and_eMDP_with_MPCC_and_WDP.pdf) shows the comparison results of four methods.
   
--[Tables 3 - 17] show detailed numerical results, but are not included in the paper due to their length. 
-  Specifically, Tables 3- 5 show the numerical results for the three relaxation schemes for the MDP. 
-  [Tables 6 - 8] show the numerical results for relaxation and direct MPCC. 
-  [Tables 9 - 11] show the numerical results for relaxation and direct WDP. 
-  [Tables 12 - 14] show the numerical results for relaxation and direct MDP, where is the first relaxation of MDP, i.e.,RMDP1. 
-  [Tables 15 - 17] show the numerical results for relaxation and direct eMDP.
+[Tables 3 - 17](results/Table_3-17_Detailed_numerical_results.pdf) show detailed numerical results, but are not included in the paper due to their length. 
 
-
-## Replicating
+- Tables 3- 5 show the numerical results for the three relaxation schemes for the MDP. 
+- Tables 6 - 8 show the numerical results for relaxation and direct MPCC. 
+- Tables 9 - 11 show the numerical results for relaxation and direct WDP. 
+- Tables 12 - 14 show the numerical results for relaxation and direct MDP, where is the first relaxation of MDP, i.e.,RMDP1. 
+- Tables 15 - 17 show the numerical results for relaxation and direct eMDP.
 
 
 ## Requirements
@@ -80,4 +80,4 @@ All optimization problem are solved using MATLAB 9.13.0.
 
 ## Support
 
-For support in using this software, please contact the corresponding author.
+For support in using the code, please contact the corresponding author.
