@@ -44,13 +44,13 @@ This paper solves the bilevel programs by direct and relaxation methods of four 
 
 The folder [code](code) contains four types of files: generation of linear bilevel programs( [problem](code/problem.m) ), objective functions( [fun](code/fun.m) ), constraints, and main programs. An example is as follows:
 
-- [main_MDP](code/main_MDP.m) is the main program that solves the bilevel programs by the MDP direct method.
+- [main_eMDP](code/main_eMDP.m) is the main program that solves the bilevel programs by the MDP direct method.
 
-- [constraints_MDP](code/constraints_MDP.m) is the constraint program for solving bilevel programs by the MDP direct method.
+- [constraints_eMDP](code/constraints_eMDP.m) is the constraint program for solving bilevel programs by the MDP direct method.
 
-- [main_RMDP](code/main_RMDP.m) is the main program that solves the bilevel programs by the MDP relaxation method.
+- [main_ReMDP](code/main_ReMDP.m) is the main program that solves the bilevel programs by the MDP relaxation method.
 
-- [constraints_RMDP](code/constraints_RMDP.m) is the constraint program for solving bilevel programs by the MDP relaxation method.
+- [constraints_ReMDP](code/constraints_ReMDP.m) is the constraint program for solving bilevel programs by the MDP relaxation method.
 
 
 ### Data
