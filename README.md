@@ -33,15 +33,16 @@ Below is the BibTex for citing this snapshot of the respoitory.
 
 ## Description
 
-The goal of this software is to compare the effectiveness of methods for solving bilevel programs.
+The goal of this repository is to illustrate the effectiveness of solving bilevel programs based on the lower-level Mond-Weir duality.
 
 
 ## Repository Structure
 
 ### Code
-This paper solves the bilevel programs based on four methods, namely, MDP, eMDP, MPCC, and WDP, and use both direct and relaxation methods, respectively.
 
-The folder code contains four types of files: generation of linear bilevel programs( [problem](code/problem) ), objective functions ( [fun](code/fun) ), constraints, and main programs. An example is as follows:
+This paper solves the bilevel programs by direct and relaxation methods of four reformulations, namely, MDP, eMDP, MPCC, and WDP.
+
+The folder [code](code) contains four types of files: generation of linear bilevel programs( [problem](code/problem) ), objective functions ( [fun](code/fun) ), constraints, and main programs. An example is as follows:
 
 - [main_MDP](code/main_MDP) is the main program that solves the bilevel programs by the MDP direct method.
 
@@ -60,7 +61,7 @@ All the necessary [data](data) for replicating the experiments is included withi
 
 The [results](results) consist of two parts: one is the detailed numerical results of solving the bilevel programs using the four methods, and the other is the results of analyzing them.
 
-Tables 1 & 2 shows the analytical results of the detailed numerical results [Tables 3-17](results/Table_3-17_Detailed_numerical_results.pdf) which are in the numerical experiments section of the paper. 
+Tables 1 & 2 shows the analytical results of the detailed numerical results [Tables 3-17](results/Table_3-17_Detailed_numerical_results.pdf), which are in the numerical experiments section of the paper. 
 
 - [Table 1](results/Table_1_Comparison_of_three_relaxation_schemes_MDP1,_MDP2,_and_MDP3.pdf) shows the comparison results of three relaxation schemes for MDP. 
 
