@@ -40,17 +40,17 @@ The goal of this repository is to illustrate the effectiveness of solving bileve
 
 ### Code
 
-This paper solves the bilevel programs by direct and relaxation methods of four reformulations, namely, MDP, eMDP, MPCC, and WDP.
+This paper solves the bilevel programs by direct and relaxation methods of four reformulations, namely, eMDP, MDP, MPCC, and WDP.
 
 The folder [code](code) contains four types of files: generation of linear bilevel programs( [problem](code/problem.m) ), objective functions( [fun](code/fun.m) ), constraints, and main programs. An example is as follows:
 
-- [main_eMDP](code/main_eMDP.m) is the main program that solves the bilevel programs by the MDP direct method.
+- [main_eMDP](code/main_eMDP.m) is the main program that solves the bilevel programs by the eMDP direct method.
 
-- [constraints_eMDP](code/constraints_eMDP.m) is the constraint program for solving bilevel programs by the MDP direct method.
+- [constraints_eMDP](code/constraints_eMDP.m) is the constraint program for solving bilevel programs by the eMDP direct method.
 
-- [main_ReMDP](code/main_ReMDP.m) is the main program that solves the bilevel programs by the MDP relaxation method.
+- [main_ReMDP](code/main_ReMDP.m) is the main program that solves the bilevel programs by the eMDP relaxation method.
 
-- [constraints_ReMDP](code/constraints_ReMDP.m) is the constraint program for solving bilevel programs by the MDP relaxation method.
+- [constraints_ReMDP](code/constraints_ReMDP.m) is the constraint program for solving bilevel programs by the eMDP relaxation method.
 
 
 ### Data
