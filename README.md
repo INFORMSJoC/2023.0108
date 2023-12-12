@@ -33,7 +33,7 @@ Below is the BibTex for citing this snapshot of the repository.
 
 ## Description
 
-The goal of this repository is to provide a large number of numerical examples illustrating the effectiveness of solving bilevel programs based on lower-level Mond-Weir duality.
+The goal of this repository is to provide a large number of numerical examples to illustrate the effectiveness of solving bilevel programs based on lower-level Mond-Weir duality.
 
 ## Repository Structure
 
