@@ -65,7 +65,7 @@ Tables 1 & 2 shows the analytical results of the detailed numerical results [Tab
 
 - [Table 1](results/Table_1_Comparison_of_three_relaxation_schemes_MDP1,_MDP2,_and_MDP3.pdf) shows the comparison results of three relaxation schemes for MDP. 
 
-- [Table 2](results/Table_2_Comparison_of_MDP_and_eMDP_with_MPCC_and_WDP.pdf) shows the comparison results of four methods.
+- [Table 2](results/Table 2 Comparison of MDP and eMDP with MPCC and WDP.pdf) shows the comparison results of four methods.
   
 [Tables 3 - 17](results/Table_3-17_Detailed_numerical_results.pdf) show detailed numerical results, but are not included in the paper due to their length. 
 
