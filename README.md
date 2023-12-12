@@ -61,7 +61,7 @@ All the necessary [data](data) for replicating the experiments is included withi
 
 The [results](results) consist of two parts: one is the detailed numerical results of solving the bilevel programs using the four methods, and the other is the results of analyzing them.
 
-Tables 1 & 2 shows the analytical results of the detailed numerical results [Tables 3-17](results/Table 3-17 Detailed numerical results.pdf), which are in the numerical experiments section of the paper. 
+Tables 1 & 2 shows the analytical results of the detailed numerical results [Tables 3-17](results/Table_3-17_Detailed_numerical_results.pdf), which are in the numerical experiments section of the paper. 
 
 - [Table 1](results/Table_1_Comparison_of_three_relaxation_schemes_MDP1,_MDP2,_and_MDP3.pdf) shows the comparison results of three relaxation schemes for MDP. 
 
