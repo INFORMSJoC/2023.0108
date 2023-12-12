@@ -1,13 +1,13 @@
 %===========Generation of linear bilevel programs=============
 
-n=20;     %Dimension of the upper level variable x
-l=30;     %Number of upper level inequality constraints
-m=60;     %Dimension of the lower level variable y
-p=50;     %Number of lower level inequality constraints
+n=20;     %Dimension of the upper-level variable x
+l=30;     %Number of upper-level inequality constraints
+m=60;     %Dimension of the lower-level variable y
+p=50;     %Number of lower-level inequality constraints
 
 d=0.5;   
-lb_y=-10*ones(m,1);   %lower bound for variable y
-ub_y=10*ones(m,1);    %upper bound for variable y
+lb_y=-10*ones(m,1);   %Lower bound for variable y
+ub_y=10*ones(m,1);    %Upper bound for variable y
 
 c_1= sprand(n,1,d)-sprand(n,1,d); 
 c_2= sprand(m,1,d)-sprand(m,1,d); 
