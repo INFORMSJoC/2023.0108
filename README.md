@@ -1,106 +1,87 @@
 [![INFORMS Journal on Computing Logo](https://INFORMSJoC.github.io/logos/INFORMS_Journal_on_Computing_Header.jpg)](https://pubsonline.informs.org/journal/ijoc)
 
-# CacheTest
+# Solving Bilevel Programs Based on Lower-level Mond-Weir Duality
 
 This archive is distributed in association with the [INFORMS Journal on
-Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
+Computing](https://pubsonline.informs.org/journal/ijoc) under the [GNU General Public License v3.0](LICENSE).
 
-The software and data in this repository are a snapshot of the software and data
-that were used in the research reported on in the paper 
-[This is a Template](https://doi.org/10.1287/ijoc.2019.0000) by T. Ralphs. 
-The snapshot is based on 
-[this SHA](https://github.com/tkralphs/JoCTemplate/commit/f7f30c63adbcb0811e5a133e1def696b74f3ba15) 
-in the development repository. 
+This repository contains supporting materials for the paper
+[Solving Bilevel Programs Based on Lower-level Mond-Weir Duality](https://doi.org/10.1287/ijoc.2023.0108) by Y. W. Li, G. H. Lin and X. Zhu. 
 
-**Important: This code is being developed on an on-going basis at 
-https://github.com/tkralphs/JoCTemplate. Please go there if you would like to
-get a more recent version or would like support**
+The software and data in this repository are a snapshot of the software and data that were used in the research reported in the paper.
 
 ## Cite
 
 To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
 
-https://doi.org/10.1287/ijoc.2019.0000
+https://doi.org/10.1287/ijoc.2023.0108
 
-https://doi.org/10.1287/ijoc.2019.0000.cd
+https://doi.org/10.1287/ijoc.2023.0108.cd
 
-Below is the BibTex for citing this snapshot of the respoitory.
+Below is the BibTex for citing this snapshot of the repository.
 
 ```
-@article{CacheTest,
-  author =        {T. Ralphs},
+@article{Li2023.0108,
+  author =        {Yu-Wei Li and Gui-Hua Lin and Xide Zhu},
   publisher =     {INFORMS Journal on Computing},
-  title =         {{CacheTest}},
-  year =          {2020},
-  doi =           {10.1287/ijoc.2019.0000.cd},
-  url =           {https://github.com/INFORMSJoC/2019.0000},
+  title =         {Solving Bilevel Programs Based on Lower-level Mond-Weir Duality},
+  year =          {2023},
+  doi =           {10.1287/ijoc.2023.0108.cd},
+  url =           {https://github.com/INFORMSJoC/2023.0108},
 }  
 ```
 
 ## Description
 
-The goal of this software is to demonstrate the effect of cache optimization.
+The goal of this repository is to provide a large number of numerical examples to illustrate the effectiveness of solving bilevel programs based on lower-level Mond-Weir duality.
 
-## Building
+## Repository Structure
 
-In Linux, to build the version that multiplies all elements of a vector by a
-constant (used to obtain the results in [Figure 1](results/mult-test.png) in the
-paper), stepping K elements at a time, execute the following commands.
+### Code
 
-```
-make mult
-```
+This paper solves bilevel programs by direct and relaxation methods of four reformulations, namely, eMDP, MDP, MPCC, and WDP.
 
-Alternatively, to build the version that sums the elements of a vector (used
-to obtain the results [Figure 2](results/sum-test.png) in the paper), stepping K
-elements at a time, do the following.
+The folder [code](code) contains four types of files: generation of linear bilevel programs ( [problem](code/problem.m) ), objective functions ( [fun](code/fun.m) ), constraints, and main programs. An example is as follows:
 
-```
-make clean
-make sum
-```
+- [main_eMDP](code/main_eMDP.m) is the main program for solving bilevel programs by the direct method for eMDP.
 
-Be sure to make clean before building a different version of the code.
+- [constraints_eMDP](code/constraints_eMDP.m) is the constraint program for solving bilevel programs by the direct method for eMDP.
 
-## Results
+- [main_ReMDP](code/main_ReMDP.m) is the main program for solving bilevel programs by the relaxation method for eMDP.
 
-Figure 1 in the paper shows the results of the multiplication test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
+- [constraints_ReMDP](code/constraints_ReMDP.m) is the constraint program for solving bilevel programs by the relaxation method for eMDP.
 
-![Figure 1](results/mult-test.png)
 
-Figure 2 in the paper shows the results of the sum test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
+### Data
 
-![Figure 1](results/sum-test.png)
+All the necessary [data](data) for replicating the experiments is included within the code.
 
-## Replicating
+### Results
 
-To replicate the results in [Figure 1](results/mult-test), do either
+The [results](results) consist of two parts: one is the detailed numerical results in solving bilevel programs using four methods, and the other is the results in analyzing them.
 
-```
-make mult-test
-```
-or
-```
-python test.py mult
-```
-To replicate the results in [Figure 2](results/sum-test), do either
+Tables 1 & 2 show the analytical results of the detailed numerical results [Tables 3-17](results/Table_3-17_Detailed_numerical_results.pdf), which are in the numerical experiments section of the paper. 
 
-```
-make sum-test
-```
-or
-```
-python test.py sum
-```
+- [Table 1](results/Table_1_Comparison_of_three_relaxation_schemes_MDP1,_MDP2,_and_MDP3.pdf) shows the comparison results of three relaxation schemes for MDP. 
 
-## Ongoing Development
+- [Table 2](results/Table_2_Comparison_of_MDP_and_eMDP_with_MPCC_and_WDP.pdf) shows the comparison results of four methods.
+  
+[Tables 3-17](results/Table_3-17_Detailed_numerical_results.pdf) show detailed numerical results, but are not included in the paper due to their length. 
 
-This code is being developed on an on-going basis at the author's
-[Github site](https://github.com/tkralphs/JoCTemplate).
+- Tables 3-5 show the numerical results derived from three relaxation schemes for MDP.
+  
+- Tables 6-8 show the numerical results derived from relaxation and direct schemes for MPCC.
+ 
+- Tables 9-11 show the numerical results derived from relaxation and direct schemes for WDP.
+ 
+- Tables 12-14 show the numerical results derived from relaxation and direct schemes for MDP, where the relaxation scheme is the first relaxation scheme in Tables 3-5.
+
+- Tables 15-17 show the numerical results derived from relaxation and direct schemes for eMDP.
+
+
+## Requirements
+All optimization problems are solved using MATLAB 9.13.0.
 
 ## Support
 
-For support in using this software, submit an
-[issue](https://github.com/tkralphs/JoCTemplate/issues/new).
+For support in using the code, don't hesitate to get in touch with the corresponding author.
